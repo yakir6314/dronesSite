@@ -1,18 +1,32 @@
 @model drones.Models.Search
 
 @{
-    Layout = null;
+    ViewData["title"] = "Search";
 }
 
 <!DOCTYPE html>
 
 <html>
 <head>
-    <title>title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] -Search Drone</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-<div>
-      
+    <div class="text-center">
+        <h1 class="display-4">חפש את הרחפן הבא שלך </h1>
+
+    </div>
+
+<div id="search">
+    <br>
+         <input type="text" placeholder="Search..">
+    </br>
+   
 </div>
+
+
 </body>
 </html>
